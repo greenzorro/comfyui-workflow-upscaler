@@ -1,9 +1,10 @@
 # comfyui-workflow-upscaler
+
 ComfyUI workflows for upscaling.
 
 ## Sharpening upscaler
 
-[Sharpening upscaler](https://github.com/greenzorro/comfyui-workflow-upscaler/blob/main/upscaler-sharpen.json))
+[Sharpening upscaler](https://github.com/greenzorro/comfyui-workflow-upscaler/blob/main/upscaler-sharpen.json)
 
 Add details to an image to boost its resolution.
 Only one upscale model is used in the workflow.
