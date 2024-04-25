@@ -32,6 +32,10 @@ Upscaled image（放大效果）:
 
 ![](https://github.com/greenzorro/comfyui-workflow-upscaler/blob/main/example_creative.png?raw=true)
 
+When it does not work for you, try adjusting ControlNet Canny thresholds, ControlNet weight and Ksampler denoise.
+
+当效果不理想时，尝试调整ControlNet Canny的临界值、ControlNet权重和Ksampler的denoise参数。
+
 ---
 
 Special thanks to [clarity-upscaler](https://github.com/philz1337x/clarity-upscaler) which inspired my workflow! Clarity-upscaler is based on A1111 and has not offered ComfyUI workflow yet. I played with the models it uses and somehow created my own simplified alternative. I have to say that mine is not as good as the original clarity-upscaler, but it works for me.
