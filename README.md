@@ -6,7 +6,7 @@ ComfyUI upscale 工作流。
 
 ## 🔍 Sharpening upscaler
 
-[Sharpening upscaler](https://github.com/greenzorro/comfyui-workflow-upscaler/blob/main/upscaler-sharpen.json)
+[⏬ Sharpening upscaler](https://github.com/greenzorro/comfyui-workflow-upscaler/blob/main/upscaler-sharpen.json)
 
 Add details to an image to boost its resolution. Only one upscaler model is used in the workflow.
 
@@ -14,7 +14,7 @@ Add details to an image to boost its resolution. Only one upscaler model is used
 
 ## 🎨 Creative upscaler
 
-[Creative upscaler](https://github.com/greenzorro/comfyui-workflow-upscaler/blob/main/upscaler-creative.json)
+[⏬ Creative upscaler](https://github.com/greenzorro/comfyui-workflow-upscaler/blob/main/upscaler-creative.json)
 
 Add more details with AI imagination. The output looks better, elements in the image may vary.
 
