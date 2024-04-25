@@ -123,7 +123,7 @@
       },
       "flags": {},
       "order": 15,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "upscale_model",
@@ -164,7 +164,7 @@
       },
       "flags": {},
       "order": 2,
-      "mode": 4,
+      "mode": 0,
       "outputs": [
         {
           "name": "UPSCALE_MODEL",
@@ -196,7 +196,7 @@
       },
       "flags": {},
       "order": 16,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "images",
