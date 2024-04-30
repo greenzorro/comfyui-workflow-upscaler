@@ -46,7 +46,7 @@ The models you need for my workflow:
 
 我的工作流所需的模型：
 
-- Checkpoint: juggernaut_reborn.safetensors [https://civitai.com/api/download/models/274039](https://civitai.com/api/download/models/274039)
+- Checkpoint: dreamshaper_8.safetensors [https://civitai.com/api/download/models/128713?type=Model&format=SafeTensor&size=pruned&fp=fp16](https://civitai.com/api/download/models/128713?type=Model&format=SafeTensor&size=pruned&fp=fp16)
 - ControlNet: control_v11f1e_sd15_tile.pth [https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f1e_sd15_tile.pth?download=true](https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f1e_sd15_tile.pth?download=true)
 - LoRA: more_details.safetensors [https://civitai.com/api/download/models/87153](https://civitai.com/api/download/models/87153)
 - LoRA: SDXLrender_v2.0.safetensors [https://civitai.com/api/download/models/236130](https://civitai.com/api/download/models/236130)
