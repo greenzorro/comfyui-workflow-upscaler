@@ -294,45 +294,6 @@
       ]
     },
     {
-      "id": 42,
-      "type": "CLIPTextEncode",
-      "pos": [
-        -323,
-        456
-      ],
-      "size": {
-        "0": 400,
-        "1": 200
-      },
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 45
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            44
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "(worst quality, low quality, normal, quality:2), (embedding:BadDream:1), (embedding:UnrealisticDream:1)"
-      ]
-    },
-    {
       "id": 35,
       "type": "PreviewImage",
       "pos": [
@@ -490,7 +451,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        167779495777743,
+        616540145477097,
         "randomize",
         18,
         4,
@@ -845,6 +806,45 @@
       "properties": {},
       "widgets_values": [
         "ComfyUI"
+      ]
+    },
+    {
+      "id": 42,
+      "type": "CLIPTextEncode",
+      "pos": [
+        -323,
+        456
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 45
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            44
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "(worst quality, low quality, normal quality:2), (embedding:BadDream:1), (embedding:UnrealisticDream:1)"
       ]
     }
   ],
