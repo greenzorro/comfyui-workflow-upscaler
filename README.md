@@ -32,9 +32,9 @@ Upscaled image（放大效果）:
 
 ![](https://github.com/greenzorro/comfyui-workflow-upscaler/blob/main/example_creative.png?raw=true)
 
-When it does not work for you, try adjusting ControlNet weight and Ksampler denoise.
+When it does not work for you, try adjusting ControlNet weight and denoise.
 
-当效果不理想时，尝试调整ControlNet权重和Ksampler的denoise参数。
+当效果不理想时，尝试调整ControlNet权重和denoise参数。
 
 ---
 
