@@ -67,7 +67,7 @@
         "1": 200
       },
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
@@ -92,45 +92,6 @@
       },
       "widgets_values": [
         "masterpiece, best quality, highres"
-      ]
-    },
-    {
-      "id": 42,
-      "type": "CLIPTextEncode",
-      "pos": [
-        8.988063528853756,
-        455.4660390765019
-      ],
-      "size": {
-        "0": 400,
-        "1": 200
-      },
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 88
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            70
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "(worst quality, low quality, normal quality:2), (embedding:BadDream:1), (embedding:UnrealisticDream:1)"
       ]
     },
     {
@@ -215,46 +176,6 @@
       ]
     },
     {
-      "id": 10,
-      "type": "LoadImage",
-      "pos": [
-        853,
-        126
-      ],
-      "size": {
-        "0": 386.0172119140625,
-        "1": 480.1004333496094
-      },
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            66,
-            82
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "example_source.png",
-        "image"
-      ]
-    },
-    {
       "id": 60,
       "type": "AnyLinePreprocessor",
       "pos": [
@@ -266,7 +187,7 @@
         "1": 26
       },
       "flags": {},
-      "order": 4,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -303,7 +224,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "outputs": [
         {
@@ -321,6 +242,96 @@
       },
       "widgets_values": [
         "mistoLine_rank256.safetensors"
+      ]
+    },
+    {
+      "id": 24,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        -450.1840334258462,
+        196.07766010909148
+      ],
+      "size": {
+        "0": 315,
+        "1": 98
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            89
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            87,
+            88
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            67
+          ],
+          "shape": 3,
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "DreamShaperXL_Lightning.safetensors"
+      ]
+    },
+    {
+      "id": 42,
+      "type": "CLIPTextEncode",
+      "pos": [
+        8.988063528853756,
+        455.4660390765019
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 88
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            70
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "(worst quality, low quality, normal quality:2), (embedding:negativeXL_D:1)"
       ]
     },
     {
@@ -385,7 +396,7 @@
       },
       "widgets_values": [
         2,
-        382718545341264,
+        184528608758857,
         "randomize",
         6,
         2,
@@ -393,8 +404,8 @@
         "karras",
         0.25,
         "Linear",
-        512,
-        512,
+        1024,
+        1024,
         8,
         32,
         "None",
@@ -407,54 +418,43 @@
       ]
     },
     {
-      "id": 24,
-      "type": "CheckpointLoaderSimple",
+      "id": 10,
+      "type": "LoadImage",
       "pos": [
-        -450.1840334258462,
-        196.07766010909148
+        853,
+        126
       ],
       "size": {
-        "0": 315,
-        "1": 98
+        "0": 386.0172119140625,
+        "1": 480.1004333496094
       },
       "flags": {},
       "order": 3,
       "mode": 0,
       "outputs": [
         {
-          "name": "MODEL",
-          "type": "MODEL",
+          "name": "IMAGE",
+          "type": "IMAGE",
           "links": [
-            89
+            66,
+            82
           ],
           "shape": 3,
           "slot_index": 0
         },
         {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            87,
-            88
-          ],
-          "shape": 3,
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            67
-          ],
-          "shape": 3,
-          "slot_index": 2
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
         }
       ],
       "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
+        "Node name for S&R": "LoadImage"
       },
       "widgets_values": [
-        "DreamShaperXL_Lightning.safetensors"
+        "example_source.png",
+        "image"
       ]
     }
   ],
