@@ -18,11 +18,11 @@ Add details to an image to boost its resolution. Only one upscaler model is used
 
 Add more details with AI imagination. The output looks better, elements in the image may vary.
 
-Multiple LoRAs to add details. Low denoise value for latent image and ControlNet to keep the composition.
+Low denoise value for latent image and ControlNet to keep the composition.
 
 利用 AI 想象出更多细节。输出效果更佳，但图中的元素可能会发生变化。
 
-使用了多个 LoRA 来增加细节。为潜空间图像设置了较低的denoise值，结合 ControlNet 的运用，来保持图片内容。
+为潜空间图像设置了较低的denoise值，结合 ControlNet 的运用，来保持图片内容。
 
 Source image（原图）:
 
@@ -55,8 +55,6 @@ The nodes and models you need for my workflow:
 我的工作流所需的节点和模型：
 
 - Custom node: ComfyUI_UltimateSDUpscale [https://github.com/ssitu/ComfyUI_UltimateSDUpscale](https://github.com/ssitu/ComfyUI_UltimateSDUpscale)
-- Checkpoint: dreamshaper_8.safetensors [https://civitai.com/api/download/models/128713?type=Model&format=SafeTensor&size=pruned&fp=fp16](https://civitai.com/api/download/models/128713?type=Model&format=SafeTensor&size=pruned&fp=fp16)
-- ControlNet: control_v11f1e_sd15_tile.pth [https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f1e_sd15_tile.pth?download=true](https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f1e_sd15_tile.pth?download=true)
-- LoRA: more_details.safetensors [https://civitai.com/api/download/models/87153](https://civitai.com/api/download/models/87153)
-- LoRA: SDXLrender_v2.0.safetensors [https://civitai.com/api/download/models/236130](https://civitai.com/api/download/models/236130)
+- Checkpoint: DreamShaperXL_Lightning.safetensors [https://huggingface.co/Lykon/dreamshaper-xl-lightning/resolve/main/DreamShaperXL_Lightning.safetensors?download=true](https://huggingface.co/Lykon/dreamshaper-xl-lightning/resolve/main/DreamShaperXL_Lightning.safetensors?download=true)
+- ControlNet: mistoLine_rank256.safetensors [https://huggingface.co/TheMistoAI/MistoLine/resolve/main/mistoLine_rank256.safetensors?download=true](https://huggingface.co/TheMistoAI/MistoLine/resolve/main/mistoLine_rank256.safetensors?download=true)
 - Upscaler: 4x-UltraSharp.pth [https://huggingface.co/philz1337x/upscaler/resolve/main/4x-UltraSharp.pth?download=true](https://huggingface.co/philz1337x/upscaler/resolve/main/4x-UltraSharp.pth?download=true)
