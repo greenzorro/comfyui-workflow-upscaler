@@ -26,11 +26,19 @@ Multiple LoRAs to add details. Low denoise value for latent image and ControlNet
 
 Source image（原图）:
 
-![](https://github.com/greenzorro/comfyui-workflow-upscaler/blob/main/example_source.png?raw=true)
+![](https://github.com/greenzorro/comfyui-workflow-upscaler/blob/main/examples/example_source.png?raw=true)
 
 Upscaled image（放大效果）:
 
-![](https://github.com/greenzorro/comfyui-workflow-upscaler/blob/main/example_creative.png?raw=true)
+![](https://github.com/greenzorro/comfyui-workflow-upscaler/blob/main/examples/example_creative.png?raw=true)
+
+Source image（原图）:
+
+![](https://github.com/greenzorro/comfyui-workflow-upscaler/blob/main/examples/example_2_source.png?raw=true)
+
+Upscaled image（放大效果）:
+
+![](https://github.com/greenzorro/comfyui-workflow-upscaler/blob/main/examples/example_2_creative.png?raw=true)
 
 When it does not work for you, try adjusting ControlNet weight and denoise.
 
