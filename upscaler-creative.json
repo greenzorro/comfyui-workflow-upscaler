@@ -1,6 +1,6 @@
 {
-  "last_node_id": 60,
-  "last_link_id": 89,
+  "last_node_id": 65,
+  "last_link_id": 111,
   "nodes": [
     {
       "id": 35,
@@ -26,34 +26,6 @@
       "properties": {
         "Node name for S&R": "PreviewImage"
       }
-    },
-    {
-      "id": 14,
-      "type": "SaveImage",
-      "pos": [
-        1243,
-        171
-      ],
-      "size": {
-        "0": 385.0461120605469,
-        "1": 435.2000427246094
-      },
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 80
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "ComfyUI"
-      ]
     },
     {
       "id": 27,
@@ -92,87 +64,6 @@
       },
       "widgets_values": [
         "masterpiece, best quality, highres"
-      ]
-    },
-    {
-      "id": 33,
-      "type": "ControlNetApply",
-      "pos": [
-        92.19391418333021,
-        867.3325957258236
-      ],
-      "size": {
-        "0": 317.4000244140625,
-        "1": 98
-      },
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "conditioning",
-          "type": "CONDITIONING",
-          "link": 29
-        },
-        {
-          "name": "control_net",
-          "type": "CONTROL_NET",
-          "link": 27
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 85
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            71
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ControlNetApply"
-      },
-      "widgets_values": [
-        0.8
-      ]
-    },
-    {
-      "id": 59,
-      "type": "UpscaleModelLoader",
-      "pos": [
-        499,
-        802
-      ],
-      "size": {
-        "0": 315,
-        "1": 58
-      },
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "UPSCALE_MODEL",
-          "type": "UPSCALE_MODEL",
-          "links": [
-            81
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "UpscaleModelLoader"
-      },
-      "widgets_values": [
-        "4x-UltraSharp.pth"
       ]
     },
     {
@@ -224,7 +115,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 1,
+      "order": 0,
       "mode": 0,
       "outputs": [
         {
@@ -245,54 +136,86 @@
       ]
     },
     {
-      "id": 24,
-      "type": "CheckpointLoaderSimple",
+      "id": 59,
+      "type": "UpscaleModelLoader",
       "pos": [
-        -450.1840334258462,
-        196.07766010909148
+        499,
+        802
       ],
       "size": {
         "0": 315,
-        "1": 98
+        "1": 58
       },
       "flags": {},
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "outputs": [
         {
-          "name": "MODEL",
-          "type": "MODEL",
+          "name": "UPSCALE_MODEL",
+          "type": "UPSCALE_MODEL",
           "links": [
-            89
+            81,
+            94
           ],
           "shape": 3,
           "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            87,
-            88
-          ],
-          "shape": 3,
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            67
-          ],
-          "shape": 3,
-          "slot_index": 2
         }
       ],
       "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
+        "Node name for S&R": "UpscaleModelLoader"
       },
       "widgets_values": [
-        "DreamShaperXL_Lightning.safetensors"
+        "4x-UltraSharp.pth"
+      ]
+    },
+    {
+      "id": 33,
+      "type": "ControlNetApply",
+      "pos": [
+        92.19391418333021,
+        867.3325957258236
+      ],
+      "size": {
+        "0": 317.4000244140625,
+        "1": 98
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "link": 29
+        },
+        {
+          "name": "control_net",
+          "type": "CONTROL_NET",
+          "link": 27
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 85
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            71,
+            91
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ControlNetApply"
+      },
+      "widgets_values": [
+        0.8
       ]
     },
     {
@@ -321,7 +244,8 @@
           "name": "CONDITIONING",
           "type": "CONDITIONING",
           "links": [
-            70
+            70,
+            92
           ],
           "shape": 3,
           "slot_index": 0
@@ -332,6 +256,59 @@
       },
       "widgets_values": [
         "(worst quality, low quality, normal quality:2), (embedding:negativeXL_D:1)"
+      ]
+    },
+    {
+      "id": 24,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        -450.1840334258462,
+        196.07766010909148
+      ],
+      "size": {
+        "0": 315,
+        "1": 98
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            89,
+            90
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            87,
+            88
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            67,
+            93
+          ],
+          "shape": 3,
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "DreamShaperXL_Lightning.safetensors"
       ]
     },
     {
@@ -385,7 +362,8 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            80
+            110,
+            111
           ],
           "shape": 3,
           "slot_index": 0
@@ -395,14 +373,14 @@
         "Node name for S&R": "UltimateSDUpscale"
       },
       "widgets_values": [
-        2,
-        184528608758857,
+        1.5,
+        532357521530496,
         "randomize",
         6,
         2,
         "dpmpp_sde",
         "karras",
-        0.25,
+        0.2,
         "Linear",
         1024,
         1024,
@@ -418,11 +396,150 @@
       ]
     },
     {
+      "id": 61,
+      "type": "UltimateSDUpscale",
+      "pos": [
+        851,
+        126
+      ],
+      "size": {
+        "0": 315,
+        "1": 614
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 110
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 90
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 91
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 92
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 93
+        },
+        {
+          "name": "upscale_model",
+          "type": "UPSCALE_MODEL",
+          "link": 94
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            96
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UltimateSDUpscale"
+      },
+      "widgets_values": [
+        1.5,
+        51495131873764,
+        "randomize",
+        6,
+        2,
+        "dpmpp_sde",
+        "karras",
+        0.35000000000000003,
+        "Linear",
+        1024,
+        1024,
+        8,
+        32,
+        "None",
+        1,
+        64,
+        8,
+        16,
+        true,
+        false
+      ]
+    },
+    {
+      "id": 14,
+      "type": "SaveImage",
+      "pos": [
+        1600,
+        168
+      ],
+      "size": {
+        "0": 385.0461120605469,
+        "1": 435.2000427246094
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 111
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 62,
+      "type": "SaveImage",
+      "pos": [
+        1988,
+        168
+      ],
+      "size": {
+        "0": 385.0461120605469,
+        "1": 435.2000427246094
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 96
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
       "id": 10,
       "type": "LoadImage",
       "pos": [
-        853,
-        126
+        1210,
+        124
       ],
       "size": {
         "0": 386.0172119140625,
@@ -508,14 +625,6 @@
       "CONDITIONING"
     ],
     [
-      80,
-      57,
-      0,
-      14,
-      0,
-      "IMAGE"
-    ],
-    [
       81,
       59,
       0,
@@ -570,6 +679,70 @@
       57,
       1,
       "MODEL"
+    ],
+    [
+      90,
+      24,
+      0,
+      61,
+      1,
+      "MODEL"
+    ],
+    [
+      91,
+      33,
+      0,
+      61,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      92,
+      42,
+      0,
+      61,
+      3,
+      "CONDITIONING"
+    ],
+    [
+      93,
+      24,
+      2,
+      61,
+      4,
+      "VAE"
+    ],
+    [
+      94,
+      59,
+      0,
+      61,
+      5,
+      "UPSCALE_MODEL"
+    ],
+    [
+      96,
+      61,
+      0,
+      62,
+      0,
+      "IMAGE"
+    ],
+    [
+      110,
+      57,
+      0,
+      61,
+      0,
+      "IMAGE"
+    ],
+    [
+      111,
+      57,
+      0,
+      14,
+      0,
+      "IMAGE"
     ]
   ],
   "groups": [
