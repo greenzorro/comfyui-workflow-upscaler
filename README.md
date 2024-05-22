@@ -28,11 +28,11 @@ Add more details with AI imagination. The output looks better, elements in the i
 
 Low denoise value for latent image and ControlNet to keep the composition.
 
+When it does not work for you, try adjusting ControlNet weight and denoise.
+
 利用 AI 想象出更多细节。输出效果更佳，但图中的元素可能会发生变化。
 
 为潜空间图像设置了较低的denoise值，结合 ControlNet 的运用，来保持图片内容。
-
-When it does not work for you, try adjusting ControlNet weight and denoise.
 
 当效果不理想时，尝试调整ControlNet权重和denoise参数。
 
