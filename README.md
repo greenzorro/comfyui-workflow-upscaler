@@ -4,6 +4,14 @@ ComfyUI workflows for upscaling.
 
 ComfyUI upscale 工作流。
 
+## Updates 更新记录
+
+- 4/24/2024 Created
+- 5/9/2024 Change model to Dreamshaper 8
+- 5/20/2024 Use Ultimate Upscaler instead of Ksampler
+- 5/21/2024 Change model to Dreamshaper XL Light; Use Anyline as ControlNet
+- 5/22/2024 Multi-step upscale for better result
+
 ## 🔍 Sharpening upscaler
 
 [⏬ Sharpening upscaler](https://github.com/greenzorro/comfyui-workflow-upscaler/blob/main/upscaler-sharpen.json)
