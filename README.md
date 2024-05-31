@@ -24,6 +24,8 @@ Add details to an image to boost its resolution. Only one upscaler model is used
 
 [⏬ Creative upscaler](https://github.com/greenzorro/comfyui-workflow-upscaler/blob/main/upscaler-creative.json)
 
+![](https://github.com/greenzorro/comfyui-workflow-upscaler/blob/main/upscaler-creative.png?raw=true)
+
 Add more details with AI imagination. The output looks better, elements in the image may vary.
 
 Low denoise value for latent image and ControlNet to keep the composition.
