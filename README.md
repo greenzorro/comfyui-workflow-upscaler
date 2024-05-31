@@ -16,6 +16,8 @@ ComfyUI upscale 工作流。
 
 [⏬ Sharpening upscaler](https://github.com/greenzorro/comfyui-workflow-upscaler/blob/main/upscaler-sharpen.json)
 
+![](https://github.com/greenzorro/comfyui-workflow-upscaler/blob/main/upscaler-sharpen.png?raw=true)
+
 Add details to an image to boost its resolution. Only one upscaler model is used in the workflow.
 
 为图像添加细节，提升分辨率。该工作流仅使用了一个upscaler模型。
