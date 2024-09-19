@@ -5,10 +5,10 @@
     {
       "id": 35,
       "type": "PreviewImage",
-      "pos": [
-        93.19391418333021,
-        1021.3325957258235
-      ],
+      "pos": {
+        "0": 93.19391632080078,
+        "1": 1021.3325805664062
+      },
       "size": {
         "0": 210,
         "1": 246
@@ -23,6 +23,7 @@
           "link": 83
         }
       ],
+      "outputs": [],
       "properties": {
         "Node name for S&R": "PreviewImage"
       }
@@ -30,16 +31,16 @@
     {
       "id": 27,
       "type": "CLIPTextEncode",
-      "pos": [
-        9.988063528853745,
-        203.466039076502
-      ],
+      "pos": {
+        "0": 9.98806381225586,
+        "1": 203.46603393554688
+      },
       "size": {
         "0": 400,
         "1": 200
       },
       "flags": {},
-      "order": 4,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -55,8 +56,8 @@
           "links": [
             29
           ],
-          "shape": 3,
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         }
       ],
       "properties": {
@@ -69,16 +70,16 @@
     {
       "id": 60,
       "type": "AnyLinePreprocessor",
-      "pos": [
-        -267,
-        990
-      ],
+      "pos": {
+        "0": -267,
+        "1": 990
+      },
       "size": {
         "0": 210,
         "1": 26
       },
       "flags": {},
-      "order": 6,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
@@ -95,8 +96,8 @@
             83,
             85
           ],
-          "shape": 3,
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         }
       ],
       "properties": {
@@ -104,77 +105,12 @@
       }
     },
     {
-      "id": 32,
-      "type": "ControlNetLoader",
-      "pos": [
-        -266.9125820339299,
-        866.2421695296895
-      ],
-      "size": {
-        "0": 315,
-        "1": 58
-      },
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "CONTROL_NET",
-          "type": "CONTROL_NET",
-          "links": [
-            27
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ControlNetLoader"
-      },
-      "widgets_values": [
-        "mistoLine_rank256.safetensors"
-      ]
-    },
-    {
-      "id": 59,
-      "type": "UpscaleModelLoader",
-      "pos": [
-        499,
-        802
-      ],
-      "size": {
-        "0": 315,
-        "1": 58
-      },
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "UPSCALE_MODEL",
-          "type": "UPSCALE_MODEL",
-          "links": [
-            81,
-            94
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "UpscaleModelLoader"
-      },
-      "widgets_values": [
-        "4x-UltraSharp.pth"
-      ]
-    },
-    {
       "id": 33,
       "type": "ControlNetApply",
-      "pos": [
-        92.19391418333021,
-        867.3325957258236
-      ],
+      "pos": {
+        "0": 92.19391632080078,
+        "1": 867.3325805664062
+      },
       "size": {
         "0": 317.4000244140625,
         "1": 98
@@ -207,8 +143,8 @@
             71,
             91
           ],
-          "shape": 3,
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         }
       ],
       "properties": {
@@ -221,16 +157,16 @@
     {
       "id": 42,
       "type": "CLIPTextEncode",
-      "pos": [
-        8.988063528853756,
-        455.4660390765019
-      ],
+      "pos": {
+        "0": 8.98806381225586,
+        "1": 455.4660339355469
+      },
       "size": {
         "0": 400,
         "1": 200
       },
       "flags": {},
-      "order": 5,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -247,8 +183,8 @@
             70,
             92
           ],
-          "shape": 3,
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         }
       ],
       "properties": {
@@ -259,65 +195,12 @@
       ]
     },
     {
-      "id": 24,
-      "type": "CheckpointLoaderSimple",
-      "pos": [
-        -450.1840334258462,
-        196.07766010909148
-      ],
-      "size": {
-        "0": 315,
-        "1": 98
-      },
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            89,
-            90
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            87,
-            88
-          ],
-          "shape": 3,
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            67,
-            93
-          ],
-          "shape": 3,
-          "slot_index": 2
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "DreamShaperXL_Lightning.safetensors"
-      ]
-    },
-    {
       "id": 57,
       "type": "UltimateSDUpscale",
-      "pos": [
-        499,
-        126
-      ],
+      "pos": {
+        "0": 499,
+        "1": 126
+      },
       "size": {
         "0": 315,
         "1": 614
@@ -365,8 +248,8 @@
             110,
             111
           ],
-          "shape": 3,
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         }
       ],
       "properties": {
@@ -398,10 +281,10 @@
     {
       "id": 61,
       "type": "UltimateSDUpscale",
-      "pos": [
-        851,
-        126
-      ],
+      "pos": {
+        "0": 851,
+        "1": 126
+      },
       "size": {
         "0": 315,
         "1": 614
@@ -448,8 +331,8 @@
           "links": [
             96
           ],
-          "shape": 3,
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         }
       ],
       "properties": {
@@ -481,10 +364,10 @@
     {
       "id": 14,
       "type": "SaveImage",
-      "pos": [
-        1600,
-        168
-      ],
+      "pos": {
+        "0": 1600,
+        "1": 168
+      },
       "size": {
         "0": 385.0461120605469,
         "1": 435.2000427246094
@@ -499,6 +382,7 @@
           "link": 111
         }
       ],
+      "outputs": [],
       "properties": {
         "Node name for S&R": "SaveImage"
       },
@@ -509,10 +393,10 @@
     {
       "id": 62,
       "type": "SaveImage",
-      "pos": [
-        1988,
-        168
-      ],
+      "pos": {
+        "0": 1988,
+        "1": 168
+      },
       "size": {
         "0": 385.0461120605469,
         "1": 435.2000427246094
@@ -527,6 +411,7 @@
           "link": 96
         }
       ],
+      "outputs": [],
       "properties": {
         "Node name for S&R": "SaveImage"
       },
@@ -537,17 +422,18 @@
     {
       "id": 10,
       "type": "LoadImage",
-      "pos": [
-        1210,
-        124
-      ],
+      "pos": {
+        "0": 1210,
+        "1": 124
+      },
       "size": {
         "0": 386.0172119140625,
         "1": 480.1004333496094
       },
       "flags": {},
-      "order": 3,
+      "order": 0,
       "mode": 0,
+      "inputs": [],
       "outputs": [
         {
           "name": "IMAGE",
@@ -556,8 +442,8 @@
             66,
             82
           ],
-          "shape": 3,
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         },
         {
           "name": "MASK",
@@ -572,6 +458,127 @@
       "widgets_values": [
         "example_source.png",
         "image"
+      ]
+    },
+    {
+      "id": 24,
+      "type": "CheckpointLoaderSimple",
+      "pos": {
+        "0": -450.18402099609375,
+        "1": 196.07766723632812
+      },
+      "size": {
+        "0": 315,
+        "1": 98
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            89,
+            90
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            87,
+            88
+          ],
+          "slot_index": 1,
+          "shape": 3
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            67,
+            93
+          ],
+          "slot_index": 2,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "DreamShaperXL_Lightning.safetensors"
+      ]
+    },
+    {
+      "id": 32,
+      "type": "ControlNetLoader",
+      "pos": {
+        "0": -266.9125671386719,
+        "1": 866.2421875
+      },
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CONTROL_NET",
+          "type": "CONTROL_NET",
+          "links": [
+            27
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ControlNetLoader"
+      },
+      "widgets_values": [
+        "mistoLine_rank256.safetensors"
+      ]
+    },
+    {
+      "id": 59,
+      "type": "UpscaleModelLoader",
+      "pos": {
+        "0": 499,
+        "1": 802
+      },
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "UPSCALE_MODEL",
+          "type": "UPSCALE_MODEL",
+          "links": [
+            81,
+            94
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UpscaleModelLoader"
+      },
+      "widgets_values": [
+        "4x-UltraSharp.pth"
       ]
     }
   ],
@@ -747,15 +754,16 @@
   ],
   "groups": [
     {
-      "title": "Model 模型",
+      "title": "Text_prompt 提示词",
       "bounding": [
-        -492,
-        93,
-        402,
-        252
+        -40,
+        95,
+        498,
+        607
       ],
-      "color": "#8AA",
-      "font_size": 24
+      "color": "#b58b2a",
+      "font_size": 24,
+      "flags": {}
     },
     {
       "title": "ControlNet 图片控制",
@@ -766,21 +774,31 @@
         558
       ],
       "color": "#b58b2a",
-      "font_size": 24
+      "font_size": 24,
+      "flags": {}
     },
     {
-      "title": "Text_prompt 提示词",
+      "title": "Model 模型",
       "bounding": [
-        -40,
-        95,
-        498,
-        607
+        -492,
+        93,
+        402,
+        252
       ],
-      "color": "#b58b2a",
-      "font_size": 24
+      "color": "#8AA",
+      "font_size": 24,
+      "flags": {}
     }
   ],
   "config": {},
-  "extra": {},
+  "extra": {
+    "ds": {
+      "scale": 0.4665073802097336,
+      "offset": {
+        "0": 207.2850341796875,
+        "1": 150.43431091308594
+      }
+    }
+  },
   "version": 0.4
 }
