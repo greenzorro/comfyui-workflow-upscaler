@@ -1,6 +1,6 @@
 {
-  "last_node_id": 65,
-  "last_link_id": 111,
+  "last_node_id": 66,
+  "last_link_id": 117,
   "nodes": [
     {
       "id": 35,
@@ -14,7 +14,7 @@
         "1": 246
       },
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -40,13 +40,13 @@
         "1": 200
       },
       "flags": {},
-      "order": 5,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 87
+          "link": 114
         }
       ],
       "outputs": [
@@ -116,7 +116,7 @@
         "1": 98
       },
       "flags": {},
-      "order": 8,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -166,13 +166,13 @@
         "1": 200
       },
       "flags": {},
-      "order": 6,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 88
+          "link": 115
         }
       ],
       "outputs": [
@@ -206,7 +206,7 @@
         "1": 614
       },
       "flags": {},
-      "order": 9,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -217,7 +217,7 @@
         {
           "name": "model",
           "type": "MODEL",
-          "link": 89
+          "link": 116
         },
         {
           "name": "positive",
@@ -257,7 +257,7 @@
       },
       "widgets_values": [
         1.5,
-        532357521530496,
+        913420413510456,
         "randomize",
         6,
         2,
@@ -290,7 +290,7 @@
         "1": 614
       },
       "flags": {},
-      "order": 10,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -301,7 +301,7 @@
         {
           "name": "model",
           "type": "MODEL",
-          "link": 90
+          "link": 117
         },
         {
           "name": "positive",
@@ -340,7 +340,7 @@
       },
       "widgets_values": [
         1.5,
-        51495131873764,
+        372053144810224,
         "randomize",
         6,
         2,
@@ -373,7 +373,7 @@
         "1": 435.2000427246094
       },
       "flags": {},
-      "order": 11,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -402,7 +402,7 @@
         "1": 435.2000427246094
       },
       "flags": {},
-      "order": 12,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -461,60 +461,6 @@
       ]
     },
     {
-      "id": 24,
-      "type": "CheckpointLoaderSimple",
-      "pos": {
-        "0": -450.18402099609375,
-        "1": 196.07766723632812
-      },
-      "size": {
-        "0": 315,
-        "1": 98
-      },
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            89,
-            90
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            87,
-            88
-          ],
-          "slot_index": 1,
-          "shape": 3
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            67,
-            93
-          ],
-          "slot_index": 2,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "DreamShaperXL_Lightning.safetensors"
-      ]
-    },
-    {
       "id": 32,
       "type": "ControlNetLoader",
       "pos": {
@@ -526,7 +472,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -559,7 +505,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -579,6 +525,115 @@
       },
       "widgets_values": [
         "4x-UltraSharp.pth"
+      ]
+    },
+    {
+      "id": 24,
+      "type": "CheckpointLoaderSimple",
+      "pos": {
+        "0": -808.3385620117188,
+        "1": 198.4241943359375
+      },
+      "size": {
+        "0": 315,
+        "1": 98
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            112
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            113
+          ],
+          "slot_index": 1,
+          "shape": 3
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            67,
+            93
+          ],
+          "slot_index": 2,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "DreamShaperXL_Lightning.safetensors"
+      ]
+    },
+    {
+      "id": 66,
+      "type": "LoraLoader",
+      "pos": {
+        "0": -454.2779235839844,
+        "1": 197.98025512695312
+      },
+      "size": {
+        "0": 315,
+        "1": 126
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 112
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 113
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            116,
+            117
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            114,
+            115
+          ],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoraLoader"
+      },
+      "widgets_values": [
+        "add-detail-xl.safetensors",
+        1.5,
+        1
       ]
     }
   ],
@@ -664,38 +719,6 @@
       "IMAGE"
     ],
     [
-      87,
-      24,
-      1,
-      27,
-      0,
-      "CLIP"
-    ],
-    [
-      88,
-      24,
-      1,
-      42,
-      0,
-      "CLIP"
-    ],
-    [
-      89,
-      24,
-      0,
-      57,
-      1,
-      "MODEL"
-    ],
-    [
-      90,
-      24,
-      0,
-      61,
-      1,
-      "MODEL"
-    ],
-    [
       91,
       33,
       0,
@@ -750,6 +773,54 @@
       14,
       0,
       "IMAGE"
+    ],
+    [
+      112,
+      24,
+      0,
+      66,
+      0,
+      "MODEL"
+    ],
+    [
+      113,
+      24,
+      1,
+      66,
+      1,
+      "CLIP"
+    ],
+    [
+      114,
+      66,
+      1,
+      27,
+      0,
+      "CLIP"
+    ],
+    [
+      115,
+      66,
+      1,
+      42,
+      0,
+      "CLIP"
+    ],
+    [
+      116,
+      66,
+      0,
+      57,
+      1,
+      "MODEL"
+    ],
+    [
+      117,
+      66,
+      0,
+      61,
+      1,
+      "MODEL"
     ]
   ],
   "groups": [
@@ -780,10 +851,10 @@
     {
       "title": "Model 模型",
       "bounding": [
-        -492,
-        93,
-        402,
-        252
+        -850,
+        95,
+        759,
+        283
       ],
       "color": "#8AA",
       "font_size": 24,
@@ -793,10 +864,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.4665073802097336,
+      "scale": 0.5131581182307068,
       "offset": {
-        "0": 207.2850341796875,
-        "1": 150.43431091308594
+        "0": 976.7224731445312,
+        "1": 123.72286224365234
       }
     }
   },
