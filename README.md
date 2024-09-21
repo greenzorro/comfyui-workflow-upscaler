@@ -6,6 +6,7 @@ ComfyUI upscale 工作流。
 
 ## Updates 更新记录
 
+- 9/21/2024 Use lora to add details
 - 4/24/2024 Created
 - 5/9/2024 Changed model to Dreamshaper 8
 - 5/20/2024 Use Ultimate Upscaler instead of Ksampler
