@@ -26,7 +26,8 @@
       "outputs": [],
       "properties": {
         "Node name for S&R": "PreviewImage"
-      }
+      },
+      "widgets_values": []
     },
     {
       "id": 27,
@@ -102,7 +103,8 @@
       ],
       "properties": {
         "Node name for S&R": "AnyLinePreprocessor"
-      }
+      },
+      "widgets_values": []
     },
     {
       "id": 33,
@@ -192,173 +194,6 @@
       },
       "widgets_values": [
         "(worst quality, low quality, normal quality:2), (embedding:negativeXL_D:1)"
-      ]
-    },
-    {
-      "id": 57,
-      "type": "UltimateSDUpscale",
-      "pos": {
-        "0": 499,
-        "1": 126
-      },
-      "size": {
-        "0": 315,
-        "1": 614
-      },
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 66
-        },
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 116
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 71
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 70
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 67
-        },
-        {
-          "name": "upscale_model",
-          "type": "UPSCALE_MODEL",
-          "link": 81
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            110,
-            111
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "UltimateSDUpscale"
-      },
-      "widgets_values": [
-        1.5,
-        913420413510456,
-        "randomize",
-        6,
-        2,
-        "dpmpp_sde",
-        "karras",
-        0.2,
-        "Linear",
-        1024,
-        1024,
-        8,
-        32,
-        "None",
-        1,
-        64,
-        8,
-        16,
-        true,
-        false
-      ]
-    },
-    {
-      "id": 61,
-      "type": "UltimateSDUpscale",
-      "pos": {
-        "0": 851,
-        "1": 126
-      },
-      "size": {
-        "0": 315,
-        "1": 614
-      },
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 110
-        },
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 117
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 91
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 92
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 93
-        },
-        {
-          "name": "upscale_model",
-          "type": "UPSCALE_MODEL",
-          "link": 94
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            96
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "UltimateSDUpscale"
-      },
-      "widgets_values": [
-        1.5,
-        372053144810224,
-        "randomize",
-        6,
-        2,
-        "dpmpp_sde",
-        "karras",
-        0.35000000000000003,
-        "Linear",
-        1024,
-        1024,
-        8,
-        32,
-        "None",
-        1,
-        64,
-        8,
-        16,
-        true,
-        false
       ]
     },
     {
@@ -613,8 +448,8 @@
             116,
             117
           ],
-          "shape": 3,
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         },
         {
           "name": "CLIP",
@@ -623,8 +458,8 @@
             114,
             115
           ],
-          "shape": 3,
-          "slot_index": 1
+          "slot_index": 1,
+          "shape": 3
         }
       ],
       "properties": {
@@ -632,8 +467,175 @@
       },
       "widgets_values": [
         "add-detail-xl.safetensors",
-        1.5,
+        2,
         1
+      ]
+    },
+    {
+      "id": 57,
+      "type": "UltimateSDUpscale",
+      "pos": {
+        "0": 499,
+        "1": 126
+      },
+      "size": {
+        "0": 315,
+        "1": 614
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 66
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 116
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 71
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 70
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 67
+        },
+        {
+          "name": "upscale_model",
+          "type": "UPSCALE_MODEL",
+          "link": 81
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            110,
+            111
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UltimateSDUpscale"
+      },
+      "widgets_values": [
+        1.5,
+        913420413510456,
+        "randomize",
+        6,
+        2,
+        "dpmpp_sde",
+        "karras",
+        0.2,
+        "Linear",
+        512,
+        512,
+        8,
+        32,
+        "None",
+        1,
+        64,
+        8,
+        16,
+        true,
+        false
+      ]
+    },
+    {
+      "id": 61,
+      "type": "UltimateSDUpscale",
+      "pos": {
+        "0": 851,
+        "1": 126
+      },
+      "size": {
+        "0": 315,
+        "1": 614
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 110
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 117
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 91
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 92
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 93
+        },
+        {
+          "name": "upscale_model",
+          "type": "UPSCALE_MODEL",
+          "link": 94
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            96
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UltimateSDUpscale"
+      },
+      "widgets_values": [
+        1.5,
+        372053144810224,
+        "randomize",
+        6,
+        2,
+        "dpmpp_sde",
+        "karras",
+        0.35000000000000003,
+        "Linear",
+        512,
+        512,
+        8,
+        32,
+        "None",
+        1,
+        64,
+        8,
+        16,
+        true,
+        false
       ]
     }
   ],
@@ -825,14 +827,14 @@
   ],
   "groups": [
     {
-      "title": "Text_prompt 提示词",
+      "title": "Model 模型",
       "bounding": [
-        -40,
+        -850,
         95,
-        498,
-        607
+        759,
+        283
       ],
-      "color": "#b58b2a",
+      "color": "#8AA",
       "font_size": 24,
       "flags": {}
     },
@@ -849,14 +851,14 @@
       "flags": {}
     },
     {
-      "title": "Model 模型",
+      "title": "Text_prompt 提示词",
       "bounding": [
-        -850,
+        -40,
         95,
-        759,
-        283
+        498,
+        607
       ],
-      "color": "#8AA",
+      "color": "#b58b2a",
       "font_size": 24,
       "flags": {}
     }
@@ -864,10 +866,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5131581182307068,
+      "scale": 1,
       "offset": {
-        "0": 976.7224731445312,
-        "1": 123.72286224365234
+        "0": -187.33984375,
+        "1": -20.0546875
       }
     }
   },
