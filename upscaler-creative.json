@@ -5,14 +5,14 @@
     {
       "id": 14,
       "type": "SaveImage",
-      "pos": {
-        "0": 1600,
-        "1": 168
-      },
-      "size": {
-        "0": 385.0461120605469,
-        "1": 435.2000427246094
-      },
+      "pos": [
+        1600,
+        168
+      ],
+      "size": [
+        385.0461120605469,
+        435.2000427246094
+      ],
       "flags": {},
       "order": 12,
       "mode": 0,
@@ -34,14 +34,14 @@
     {
       "id": 62,
       "type": "SaveImage",
-      "pos": {
-        "0": 1988,
-        "1": 168
-      },
-      "size": {
-        "0": 385.0461120605469,
-        "1": 435.2000427246094
-      },
+      "pos": [
+        1988,
+        168
+      ],
+      "size": [
+        385.0461120605469,
+        435.2000427246094
+      ],
       "flags": {},
       "order": 13,
       "mode": 0,
@@ -61,59 +61,18 @@
       ]
     },
     {
-      "id": 10,
-      "type": "LoadImage",
-      "pos": {
-        "0": 1210,
-        "1": 124
-      },
-      "size": {
-        "0": 386.0172119140625,
-        "1": 480.1004333496094
-      },
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            66,
-            82
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "example_source.png",
-        "image"
-      ]
-    },
-    {
       "id": 59,
       "type": "UpscaleModelLoader",
-      "pos": {
-        "0": 499,
-        "1": 802
-      },
-      "size": {
-        "0": 315,
-        "1": 58
-      },
+      "pos": [
+        499,
+        802
+      ],
+      "size": [
+        315,
+        58
+      ],
       "flags": {},
-      "order": 1,
+      "order": 0,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -138,16 +97,16 @@
     {
       "id": 66,
       "type": "LoraLoader",
-      "pos": {
-        "0": -454.2779235839844,
-        "1": 197.98025512695312
-      },
-      "size": {
-        "0": 315,
-        "1": 126
-      },
+      "pos": [
+        -454.2779235839844,
+        197.98025512695312
+      ],
+      "size": [
+        315,
+        126
+      ],
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
@@ -195,14 +154,14 @@
     {
       "id": 57,
       "type": "UltimateSDUpscale",
-      "pos": {
-        "0": 499,
-        "1": 126
-      },
-      "size": {
-        "0": 315,
-        "1": 614
-      },
+      "pos": [
+        499,
+        126
+      ],
+      "size": [
+        315,
+        614
+      ],
       "flags": {},
       "order": 10,
       "mode": 0,
@@ -279,14 +238,14 @@
     {
       "id": 61,
       "type": "UltimateSDUpscale",
-      "pos": {
-        "0": 851,
-        "1": 126
-      },
-      "size": {
-        "0": 315,
-        "1": 614
-      },
+      "pos": [
+        851,
+        126
+      ],
+      "size": [
+        315,
+        614
+      ],
       "flags": {},
       "order": 11,
       "mode": 0,
@@ -362,16 +321,16 @@
     {
       "id": 32,
       "type": "ControlNetLoader",
-      "pos": {
-        "0": -266.9125671386719,
-        "1": 866.2421875
-      },
-      "size": {
-        "0": 315,
-        "1": 58
-      },
+      "pos": [
+        -266.9125671386719,
+        866.2421875
+      ],
+      "size": [
+        315,
+        58
+      ],
       "flags": {},
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -395,16 +354,16 @@
     {
       "id": 60,
       "type": "AnyLinePreprocessor",
-      "pos": {
-        "0": -267,
-        "1": 990
-      },
-      "size": {
-        "0": 210,
-        "1": 26
-      },
+      "pos": [
+        -267,
+        990
+      ],
+      "size": [
+        210,
+        26
+      ],
       "flags": {},
-      "order": 4,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -433,16 +392,16 @@
     {
       "id": 24,
       "type": "CheckpointLoaderSimple",
-      "pos": {
-        "0": -808.3385620117188,
-        "1": 198.4241943359375
-      },
-      "size": {
-        "0": 315,
-        "1": 98
-      },
+      "pos": [
+        -808.3385620117188,
+        198.4241943359375
+      ],
+      "size": [
+        315,
+        98
+      ],
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -486,16 +445,16 @@
     {
       "id": 27,
       "type": "CLIPTextEncode",
-      "pos": {
-        "0": 9.98806381225586,
-        "1": 203.46603393554688
-      },
-      "size": {
-        "0": 400,
-        "1": 200
-      },
+      "pos": [
+        9.98806381225586,
+        203.46603393554688
+      ],
+      "size": [
+        400,
+        200
+      ],
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -525,16 +484,16 @@
     {
       "id": 42,
       "type": "CLIPTextEncode",
-      "pos": {
-        "0": 9,
-        "1": 455
-      },
-      "size": {
-        "0": 400,
-        "1": 200
-      },
+      "pos": [
+        9,
+        455
+      ],
+      "size": [
+        400,
+        200
+      ],
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -564,14 +523,14 @@
     {
       "id": 67,
       "type": "ControlNetApplyAdvanced",
-      "pos": {
-        "0": 89,
-        "1": 866
-      },
-      "size": {
-        "0": 315,
-        "1": 186
-      },
+      "pos": [
+        89,
+        866
+      ],
+      "size": [
+        315,
+        186
+      ],
       "flags": {},
       "order": 9,
       "mode": 0,
@@ -635,16 +594,16 @@
     {
       "id": 35,
       "type": "PreviewImage",
-      "pos": {
-        "0": 92,
-        "1": 1105
-      },
-      "size": {
-        "0": 210,
-        "1": 246
-      },
+      "pos": [
+        92,
+        1105
+      ],
+      "size": [
+        210,
+        246
+      ],
       "flags": {},
-      "order": 6,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -658,6 +617,47 @@
         "Node name for S&R": "PreviewImage"
       },
       "widgets_values": []
+    },
+    {
+      "id": 10,
+      "type": "LoadImage",
+      "pos": [
+        1210,
+        124
+      ],
+      "size": [
+        386.0172119140625,
+        480.1004333496094
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            66,
+            82
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "example-bird.png",
+        "image"
+      ]
     }
   ],
   "links": [
@@ -864,6 +864,7 @@
   ],
   "groups": [
     {
+      "id": 1,
       "title": "Text_prompt 提示词",
       "bounding": [
         -40,
@@ -876,6 +877,7 @@
       "flags": {}
     },
     {
+      "id": 2,
       "title": "ControlNet 图片控制",
       "bounding": [
         -321,
@@ -888,6 +890,7 @@
       "flags": {}
     },
     {
+      "id": 3,
       "title": "Model 模型",
       "bounding": [
         -850,
@@ -903,11 +906,11 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5644739300537773,
-      "offset": {
-        "0": 709.291015625,
-        "1": -108.85807037353516
-      }
+      "scale": 0.45949729863572414,
+      "offset": [
+        293.9800414115992,
+        33.38184065708013
+      ]
     }
   },
   "version": 0.4
