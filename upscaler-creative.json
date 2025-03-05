@@ -1,6 +1,6 @@
 {
-  "last_node_id": 67,
-  "last_link_id": 127,
+  "last_node_id": 68,
+  "last_link_id": 130,
   "nodes": [
     {
       "id": 14,
@@ -25,6 +25,8 @@
       ],
       "outputs": [],
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.19",
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
@@ -54,6 +56,8 @@
       ],
       "outputs": [],
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.19",
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
@@ -79,15 +83,17 @@
         {
           "name": "UPSCALE_MODEL",
           "type": "UPSCALE_MODEL",
+          "shape": 3,
           "links": [
             81,
             94
           ],
-          "slot_index": 0,
-          "shape": 3
+          "slot_index": 0
         }
       ],
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.19",
         "Node name for S&R": "UpscaleModelLoader"
       },
       "widgets_values": [
@@ -124,25 +130,27 @@
         {
           "name": "MODEL",
           "type": "MODEL",
+          "shape": 3,
           "links": [
             116,
             117
           ],
-          "slot_index": 0,
-          "shape": 3
+          "slot_index": 0
         },
         {
           "name": "CLIP",
           "type": "CLIP",
+          "shape": 3,
           "links": [
             114,
             115
           ],
-          "slot_index": 1,
-          "shape": 3
+          "slot_index": 1
         }
       ],
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.19",
         "Node name for S&R": "LoraLoader"
       },
       "widgets_values": [
@@ -201,15 +209,17 @@
         {
           "name": "IMAGE",
           "type": "IMAGE",
+          "shape": 3,
           "links": [
             110,
             111
           ],
-          "slot_index": 0,
-          "shape": 3
+          "slot_index": 0
         }
       ],
       "properties": {
+        "cnr_id": "comfyui_ultimatesdupscale",
+        "ver": "8642daf6281e4ebbdf2daca18539c0ab6c2c63f4",
         "Node name for S&R": "UltimateSDUpscale"
       },
       "widgets_values": [
@@ -285,14 +295,16 @@
         {
           "name": "IMAGE",
           "type": "IMAGE",
+          "shape": 3,
           "links": [
             96
           ],
-          "slot_index": 0,
-          "shape": 3
+          "slot_index": 0
         }
       ],
       "properties": {
+        "cnr_id": "comfyui_ultimatesdupscale",
+        "ver": "8642daf6281e4ebbdf2daca18539c0ab6c2c63f4",
         "Node name for S&R": "UltimateSDUpscale"
       },
       "widgets_values": [
@@ -337,57 +349,21 @@
         {
           "name": "CONTROL_NET",
           "type": "CONTROL_NET",
+          "shape": 3,
           "links": [
             118
           ],
-          "slot_index": 0,
-          "shape": 3
+          "slot_index": 0
         }
       ],
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.19",
         "Node name for S&R": "ControlNetLoader"
       },
       "widgets_values": [
         "mistoLine_rank256.safetensors"
       ]
-    },
-    {
-      "id": 60,
-      "type": "AnyLinePreprocessor",
-      "pos": [
-        -267,
-        990
-      ],
-      "size": [
-        210,
-        26
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 82
-        }
-      ],
-      "outputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "links": [
-            83,
-            119
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "AnyLinePreprocessor"
-      },
-      "widgets_values": []
     },
     {
       "id": 24,
@@ -408,34 +384,36 @@
         {
           "name": "MODEL",
           "type": "MODEL",
+          "shape": 3,
           "links": [
             112
           ],
-          "slot_index": 0,
-          "shape": 3
+          "slot_index": 0
         },
         {
           "name": "CLIP",
           "type": "CLIP",
+          "shape": 3,
           "links": [
             113
           ],
-          "slot_index": 1,
-          "shape": 3
+          "slot_index": 1
         },
         {
           "name": "VAE",
           "type": "VAE",
+          "shape": 3,
           "links": [
             67,
             93,
             120
           ],
-          "slot_index": 2,
-          "shape": 3
+          "slot_index": 2
         }
       ],
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.19",
         "Node name for S&R": "CheckpointLoaderSimple"
       },
       "widgets_values": [
@@ -467,14 +445,16 @@
         {
           "name": "CONDITIONING",
           "type": "CONDITIONING",
+          "shape": 3,
           "links": [
             122
           ],
-          "slot_index": 0,
-          "shape": 3
+          "slot_index": 0
         }
       ],
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.19",
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
@@ -506,14 +486,16 @@
         {
           "name": "CONDITIONING",
           "type": "CONDITIONING",
+          "shape": 3,
           "links": [
             123
           ],
-          "slot_index": 0,
-          "shape": 3
+          "slot_index": 0
         }
       ],
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.19",
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
@@ -553,13 +535,13 @@
         {
           "name": "image",
           "type": "IMAGE",
-          "link": 119
+          "link": 129
         },
         {
           "name": "vae",
           "type": "VAE",
-          "link": 120,
-          "shape": 7
+          "shape": 7,
+          "link": 120
         }
       ],
       "outputs": [
@@ -583,6 +565,8 @@
         }
       ],
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.19",
         "Node name for S&R": "ControlNetApplyAdvanced"
       },
       "widgets_values": [
@@ -609,11 +593,13 @@
         {
           "name": "images",
           "type": "IMAGE",
-          "link": 83
+          "link": 130
         }
       ],
       "outputs": [],
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.19",
         "Node name for S&R": "PreviewImage"
       },
       "widgets_values": []
@@ -637,26 +623,74 @@
         {
           "name": "IMAGE",
           "type": "IMAGE",
+          "shape": 3,
           "links": [
             66,
-            82
+            128
           ],
-          "slot_index": 0,
-          "shape": 3
+          "slot_index": 0
         },
         {
           "name": "MASK",
           "type": "MASK",
-          "links": null,
-          "shape": 3
+          "shape": 3,
+          "links": null
         }
       ],
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.19",
         "Node name for S&R": "LoadImage"
       },
       "widgets_values": [
         "example-bird.png",
         "image"
+      ]
+    },
+    {
+      "id": 68,
+      "type": "AnyLineArtPreprocessor_aux",
+      "pos": [
+        -266.4670715332031,
+        990.1627197265625
+      ],
+      "size": [
+        315,
+        178
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 128
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            129,
+            130
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui_controlnet_aux",
+        "ver": "1e9eac6377c882da8bb360c7544607036904362c",
+        "Node name for S&R": "AnyLineArtPreprocessor_aux"
+      },
+      "widgets_values": [
+        "lineart_standard",
+        1280,
+        0,
+        1,
+        36,
+        1
       ]
     }
   ],
@@ -684,22 +718,6 @@
       57,
       5,
       "UPSCALE_MODEL"
-    ],
-    [
-      82,
-      10,
-      0,
-      60,
-      0,
-      "IMAGE"
-    ],
-    [
-      83,
-      60,
-      0,
-      35,
-      0,
-      "IMAGE"
     ],
     [
       93,
@@ -798,14 +816,6 @@
       "CONTROL_NET"
     ],
     [
-      119,
-      60,
-      0,
-      67,
-      3,
-      "IMAGE"
-    ],
-    [
       120,
       24,
       2,
@@ -860,6 +870,30 @@
       61,
       3,
       "CONDITIONING"
+    ],
+    [
+      128,
+      10,
+      0,
+      68,
+      0,
+      "IMAGE"
+    ],
+    [
+      129,
+      68,
+      0,
+      67,
+      3,
+      "IMAGE"
+    ],
+    [
+      130,
+      68,
+      0,
+      35,
+      0,
+      "IMAGE"
     ]
   ],
   "groups": [
@@ -906,10 +940,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.45949729863572414,
+      "scale": 0.45949729863572314,
       "offset": [
-        293.9800414115992,
-        33.38184065708013
+        1413.0723762420969,
+        459.8718124749489
       ]
     }
   },
