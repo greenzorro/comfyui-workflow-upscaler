@@ -73,3 +73,7 @@ ComfyUI upscale 工作流。
 ## 感谢
 
 特别感谢 [clarity-upscaler](https://github.com/philz1337x/clarity-upscaler) 给我的启发！Clarity-upscaler 基于 A1111，尚未提供 ComfyUI 工作流（更新：现在有了）。我尝试了它所用的模型，捣鼓出了自己的简化替代方案。我得承认，我的工作流不如原版 clarity-upscaler 的好，但仍然管用。
+
+---
+
+由 [Victor_42](https://victor42.work/) 创造

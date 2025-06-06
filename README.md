@@ -80,3 +80,7 @@ Besides running locally, you may run them on the cloud **without extra configura
 ## Thanks
 
 Special thanks to [clarity-upscaler](https://github.com/philz1337x/clarity-upscaler) which inspired my workflow! Clarity-upscaler is based on A1111 and has not offered ComfyUI workflow yet(update:now it has). I played with the models it uses and somehow created my own simplified alternative. I have to say that mine is not as good as the original clarity-upscaler, but it works for me.
+
+---
+
+Created by [Victor_42](https://victor42.work/)
