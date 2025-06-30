@@ -6,6 +6,7 @@ ComfyUI workflows for upscaling.
 
 ## Updates
 
+- 6/30/2025 2 more upscaler workflows
 - 9/21/2024 Use lora to add details
 - 4/24/2024 Created
 - 5/9/2024 Changed model to Dreamshaper 8
@@ -17,23 +18,49 @@ ComfyUI workflows for upscaling.
 
 [⏬ Sharpening upscaler](https://github.com/greenzorro/comfyui-workflow-upscaler/blob/main/upscaler-sharpen.json)
 
+- **Sharpness**: ⭐⭐⭐
+- **Creativity**: ⭐
+- **Cost**: ⭐
+
 ![](https://github.com/greenzorro/comfyui-workflow-upscaler/blob/main/upscaler-sharpen.png?raw=true)
 
-Add details to an image to boost its resolution. Only one upscaler model is used in the workflow.
+Add details to an image to boost its resolution. Only one upscaler model is used. No diffusion model.
 
 ## 🎨 Creative upscaler
 
 [⏬ Creative upscaler](https://github.com/greenzorro/comfyui-workflow-upscaler/blob/main/upscaler-creative.json)
 
+- **Sharpness**: ⭐⭐
+- **Creativity**: ⭐⭐⭐⭐⭐
+- **Cost**: ⭐⭐
+
 ![](https://github.com/greenzorro/comfyui-workflow-upscaler/blob/main/upscaler-creative.png?raw=true)
 
-Add more details with AI imagination. The output looks better, elements in the image may vary.
+Add more details with AI imagination with SDXL. Elements in the image may vary.
 
-Low denoise value for latent image and ControlNet to keep the composition.
+Low denoise value for latent image and ControlNet to keep the composition. Adjust ControlNet weight and denoise when it fails.
 
-When it does not work for you, try adjusting ControlNet weight and denoise.
+## 🔭 Ultra sharp upscaler
 
-## Examples
+[🔭 Ultra sharp upscaler](https://github.com/greenzorro/comfyui-workflow-upscaler/blob/main/upscaler-ultra-sharp.json)
+
+- **Sharpness**: ⭐⭐⭐⭐⭐
+- **Creativity**: ⭐⭐⭐
+- **Cost**: ⭐⭐⭐
+
+Significantly boost an image by resolution with Flux dev. Fails on extremely low-res images (looks pixelated).
+
+## 💣 Mad mode upscaler
+
+[💣 Mad mode upscaler](https://github.com/greenzorro/comfyui-workflow-upscaler/blob/main/upscaler-mad-mode.json)
+
+- **Sharpness**: ⭐⭐⭐⭐⭐
+- **Creativity**: ⭐⭐⭐⭐⭐
+- **Cost**: ⭐⭐⭐⭐⭐
+
+Simply stitch **🔭 Ultra sharp** to **🎨 Creative**, combining the creativity of SDXL and the hi-res of Flux dev. Can be unstable, but surprises sometimes.
+
+## Examples (🎨 Creative)
 
 Source image:
 
@@ -57,18 +84,27 @@ Upscaled image:
 
 | Node                         | Link                                                                                                                               |
 | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| ComfyUI_UltimateSDUpscale    | [https://github.com/ssitu/ComfyUI_UltimateSDUpscale.git](https://github.com/ssitu/ComfyUI_UltimateSDUpscale.git)                   |
+| ComfyUI_Essentials           | [https://github.com/cubiq/ComfyUI_essentials.git](https://github.com/cubiq/ComfyUI_essentials.git)                                 |
+| ComfyUI-Easy-Use             | [https://github.com/yolain/ComfyUI-Easy-Use.git](https://github.com/yolain/ComfyUI-Easy-Use.git)                                   |
 | ComfyUI-Anyline              | [https://github.com/TheMistoAI/ComfyUI-Anyline.git](https://github.com/TheMistoAI/ComfyUI-Anyline.git)                             |
+| ComfyUI_UltimateSDUpscale    | [https://github.com/ssitu/ComfyUI_UltimateSDUpscale.git](https://github.com/ssitu/ComfyUI_UltimateSDUpscale.git)                   |
+| Comfyui_TTP_Toolset          | [https://github.com/TTPlanetPig/Comfyui_TTP_Toolset.git](https://github.com/TTPlanetPig/Comfyui_TTP_Toolset.git)                   |
 
 ### Models
 
 | Dir            | Model                               | Link                                                                                                                                                                                                                                         |
 | -------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| unet           | flux1-dev.safetensors               | [https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors?download=true](https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors?download=true)                             |
 | checkpoints    | DreamShaperXL_Lightning.safetensors | [https://huggingface.co/Lykon/dreamshaper-xl-lightning/resolve/main/DreamShaperXL_Lightning.safetensors?download=true](https://huggingface.co/Lykon/dreamshaper-xl-lightning/resolve/main/DreamShaperXL_Lightning.safetensors?download=true) |
+| clip           | clip_l.safetensors                  | [https://huggingface.co/Comfy-Org/stable-diffusion-3.5-fp8/resolve/main/text_encoders/clip_l.safetensors?download=true](https://huggingface.co/Comfy-Org/stable-diffusion-3.5-fp8/resolve/main/text_encoders/clip_l.safetensors?download=true) |
+| clip           | t5xxl_fp8_e4m3fn.safetensors        | [https://huggingface.co/Comfy-Org/stable-diffusion-3.5-fp8/resolve/main/text_encoders/t5xxl_fp8_e4m3fn.safetensors?download=true](https://huggingface.co/Comfy-Org/stable-diffusion-3.5-fp8/resolve/main/text_encoders/t5xxl_fp8_e4m3fn.safetensors?download=true) |
+| vae            | flux-ae.safetensors                 | [https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux-ae.safetensors](https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux-ae.safetensors)                                                               |
 | controlnet     | mistoLine_rank256.safetensors       | [https://huggingface.co/TheMistoAI/MistoLine/resolve/main/mistoLine_rank256.safetensors?download=true](https://huggingface.co/TheMistoAI/MistoLine/resolve/main/mistoLine_rank256.safetensors?download=true)                                 |
 | upscale_models | 4x-UltraSharp.pth                   | [https://huggingface.co/philz1337x/upscaler/resolve/main/4x-UltraSharp.pth?download=true](https://huggingface.co/philz1337x/upscaler/resolve/main/4x-UltraSharp.pth?download=true)                                                           |
+| upscale_models | 4x_NMKD-Siax_200k.pth               | [https://huggingface.co/uwg/upscaler/resolve/main/ESRGAN/4x_NMKD-Siax_200k.pth?download=true](https://huggingface.co/uwg/upscaler/resolve/main/ESRGAN/4x_NMKD-Siax_200k.pth?download=true)                                                 |
 | embeddings     | negativeXL_D.safetensors            | [https://civitai.com/api/download/models/134583](https://civitai.com/api/download/models/134583)                                                                                                                                             |
 | loras          | add-detail-xl.safetensors           | [https://civitai.com/api/download/models/135867?type=Model&format=SafeTensor](https://civitai.com/api/download/models/135867?type=Model&format=SafeTensor)                                                                                   |
+| loras          | Flux Dev模型4步出图lora             | [https://www.liblib.art/modelinfo/466cd07b9c9248369e236fd2b1a90414](https://www.liblib.art/modelinfo/466cd07b9c9248369e236fd2b1a90414)                                                                                                       |
 
 ## Where to run?
 
