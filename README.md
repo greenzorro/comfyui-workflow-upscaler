@@ -119,4 +119,4 @@ Special thanks to [clarity-upscaler](https://github.com/philz1337x/clarity-upsca
 
 ---
 
-Created by [Victor_42](https://victor42.work/)
+Created by [Victor42](https://victor42.work/)
